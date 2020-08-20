@@ -1,0 +1,341 @@
+/* --------------------GLOBAL--------------*/
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+
+.contenedor{
+	position: relative;
+	background: #d4f5dd;
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+.contenedor2{
+	position: relative;
+	background: #fef9f4;
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+.fila{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: table;
+}
+[class*="col-" ]{
+ 	float: left;
+ 	/*border: 1px solid black;*/
+ 	padding: 2px;
+ }
+
+
+/*==========================================
+SECCION 1
+============================================*/
+
+header {
+	background: #0a0c29;
+}
+
+#nombre{
+	padding-left: 30px;
+	font-size: 25px;
+	font-family: 'Courgette', cursive;
+	text-align: left;
+	color: white;
+}
+
+header a{
+	border-radius: 100%;
+}
+
+header a:hover{
+	background: rgba(255, 255, 255,.4);
+}
+
+header a:active{
+	background: rgba(0,255,255,1);
+}
+header center#icono1 img{
+	
+	padding-top: 1px;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+
+}
+header center#icono2 img{
+	padding: 0px;
+	border-radius: 100%;
+	width: 33px;
+	height: 33px;
+
+}
+header center#icono3 img{
+
+	border-radius: 100%;
+	width: 33px;
+	height: 33px;
+
+}
+header center#icono4 img{
+
+	border-radius: 100%;
+	width: 33px;
+	height: 33px;
+
+}
+
+
+/*==========================================
+SECCION 2
+============================================*/
+#seccion2{
+	padding: 20px;
+	
+}	
+
+#seccion2 img{
+	border-radius: 20%;
+}
+
+#seccion2 article{
+	background: white;
+	padding: 10px;
+}
+article h2 center{
+	font-size: 25px;
+	padding: 10px;
+	font-family: 'Aladin', cursive;
+	color: #40f390;
+	background: #5159d5;
+}
+
+article p{
+	text-align: justify;
+	font-size: 13px;
+	font-family: 'Arimo', sans-serif;
+	padding: 15px;
+	background: #8ad2e3;
+}
+
+#seccion2 article .caja{
+	margin: 4px;
+}
+
+#caja41{
+	background: #8ad2e3;
+	padding: 0px;
+	font-size: 13px;
+	font-family: 'Arimo', sans-serif;
+	margin-bottom: 2px;
+	text-align: center;
+}
+#caja41 p{
+	text-align: center;
+}
+
+#fotos
+{
+	
+	text-align: center;
+	border-radius: 20%;
+	width: 50px;
+	height: 30px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Aladin', cursive;
+	
+}
+/*==========================================
+SECCION 4
+============================================*/
+header a img{
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+}
+
+#principalImg{
+	
+	padding: 10px;
+}
+
+section h2 center{
+	font-size: 25px;
+	padding: 10px;
+	font-family: 'Aladin', cursive;
+	color: #40f390;
+	background: #5159d5;
+}
+
+
+
+
+/*=================================================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE(lg)
+===================================================================*/
+
+@media (min-width: 1200px) {
+
+
+	.col-lg-12{width: 100%;}
+
+	.col-lg-11{width: 91.66666667%;}
+
+	.col-lg-10{width: 83.33333333%;}
+
+	.col-lg-9{width: 75%;}
+
+	.col-lg-8{width: 66.66666666%;}
+
+	.col-lg-7{width: 58.33333333%;}
+
+	.col-lg-6{width: 50%;}
+
+	.col-lg-5{width: 41.66666667%;}
+
+	.col-lg-4{width: 33.33333333%;}
+
+	.col-lg-3{width: 25%;}
+
+	.col-lg-2{width: 16.66666667%;}
+
+	.col-lg-1{width: 8.33333333%;}
+
+	.col-lg-05{width: 1%}
+
+	.col-lg-0{display: none;} /*para esconder la caja que tenga esta clase*/
+
+
+}
+
+
+/*=================================================================
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM(md)
+===================================================================*/
+
+@media(max-width: 1199px) and (min-width: 992px) {
+	.col-md-12{width: 100%;}
+
+	.col-md-11{width: 91.66666667%;}
+
+	.col-md-10{width: 83.33333333%;}
+
+	.col-md-9{width: 75%;}
+
+	.col-md-8{width: 66.66666666%;}
+
+	.col-md-7{width: 58.33333333%;}
+
+	.col-md-6{width: 50%;}
+
+	.col-md-5{width: 41.66666667%;}
+
+	.col-md-4{width: 33.33333333%;}
+
+	.col-md-3{width: 25%;}
+
+	.col-md-2{width: 16.66666667%;}
+
+	.col-md-1{width: 8.33333333%;}
+
+	.col-md-0{display: none;}
+
+	#seccion2 img{
+		width: 90%;
+		height: 100%
+		margin-top: 60px;
+	}
+
+}
+
+/*=================================================================
+PANTALLA DE TABLET - SMALL(sm)
+===================================================================*/
+
+@media(max-width: 991px) and (min-width: 768px) {
+	.col-sm-12{width: 100%;}
+
+	.col-sm-11{width: 91.66666667%;}
+
+	.col-sm-10{width: 83.33333333%;}
+
+	.col-sm-9{width: 75%;}
+
+	.col-sm-8{width: 66.66666666%;}
+
+	.col-sm-7{width: 58.33333333%;}
+
+	.col-sm-6{width: 50%;}
+
+	.col-sm-5{width: 41.66666667%;}
+
+	.col-sm-4{width: 33.33333333%;}
+
+	.col-sm-3{width: 25%;}
+
+	.col-sm-2{width: 16.66666667%;}
+
+	.col-sm-1{width: 8.33333333%;}
+
+	.col-sm-0{display: none;}
+
+	
+}
+
+/*=================================================================
+PANTALLA DE PHONES - EXTRASMALL(xs)
+===================================================================*/
+@media(max-width: 767px) {
+	.col-xs-12{width: 100%;}
+
+	.col-xs-11{width: 91.66666667%;}
+
+	.col-xs-10{width: 83.33333333%;}
+
+	.col-xs-9{width: 75%;}
+
+	.col-xs-8{width: 66.66666666%;}
+
+	.col-xs-7{width: 58.33333333%;}
+
+	.col-xs-6{width: 50%;}
+
+	.col-xs-5{width: 41.66666667%;}
+
+	.col-xs-4{width: 33.33333333%;}
+
+	.col-xs-3{width: 25%;}
+
+	.col-xs-2{width: 16.66666667%;}
+
+	.col-xs-1{width: 8.33333333%;}
+
+	.col-xs-0{display: none;}
+
+
+	#seccion2 img{
+		width:90%;
+		height: 100%
+		
+	}
+	
+	
+}
+
+
